@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(20, 4, 36);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(-45deg); */
+    animation: simple 4s infinite linear;
+  }
+  /* .p {
+    width: 100px;
+    height: 2px;
+    background-color: rgb(230, 236, 240);
+    transform-origin: top;
+    position:absolute;
+    top: 50px;
+    
+  } */
+
+  .top {
+    width: 2px;
+    height: 200px;
+    background-color: rgb(230, 236, 240);
+    transform-origin:0px;
+    position: relative;
+    
+  }
+
+  .pendulum {
+    border: 2px solid rgb(235, 229, 229);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    background-color: black;
+    transform-origin: top;
+  }
+  @keyframes simple {
+    0%,
+    100% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+  }
